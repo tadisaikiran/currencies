@@ -1,0 +1,10 @@
+<!-- <div class="col-12" *ngFor="let cur of currencyList | keyvalue">
+  <a [routerLink]="[cur.key]">{{ cur.value }}</a>
+</div> -->
+<div class="row">
+  <div class="column" *ngFor="let cur of currencyList | keyvalue">
+    <div class="card" [routerLink]="[cur.key]">
+      <h3>{{ cur.value }}</h3>
+    </div>
+  </div>
+</div>
